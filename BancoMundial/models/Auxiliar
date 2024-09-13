@@ -1,0 +1,12 @@
+public class Auxiliar{
+
+    public int CalcularIdade(DateTime data){
+
+    }
+
+    public string FaixaEtaria(int idade){
+
+    }
+
+    
+}
