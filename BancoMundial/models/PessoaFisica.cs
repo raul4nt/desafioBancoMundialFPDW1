@@ -10,15 +10,19 @@ class PessoaFisica : Pessoa{
     public double Renda{ get; set; }
 
     public PessoaFisica(
-        int numeroDePessoas, int id, string endereco, string tel, string email, string nome, string sobrenome, string rg, string cpf, DateTime dataNasc, int idade, string faixaEtaria, double renda) : base(numeroDePessoas, id, endereco, tel, email){
+        int id, string endereco, string tel, string email, string nome, string sobrenome, string rg, string cpf, DateTime dataNasc, int idade, string faixaEtaria, double renda) : base(id, endereco, tel, email){
             Nome = nome;
             Sobrenome = sobrenome;
             Rg = rg;
             Cpf = cpf;
             DataNasc = dataNasc;
-            Idade = idade;
-            FaixaEtaria = faixaEtaria;
-            Renda = renda;
+            Idade = Auxiliar.CalcularIdade(DataNasc);
+            FaixaEtaria = Auxiliar.FaixaEtaria(Idade);
+            Renda = 0;
         }
 }
 
+// Pessoas físicas tem um nome, sobrenome, rg, 
+// cpf e data de nascimento como campos obrigatórios. 
+// Os campos idade, faixa etária e renda são definidos 
+// automaticamente.

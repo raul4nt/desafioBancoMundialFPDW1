@@ -1,0 +1,15 @@
+C:\Users\BANCADA\Desktop\desafio_banco_mundialFPDW1\desafioBancoMundialFPDW1\BancoMundial\bin\Debug\net8.0\BancoMundial.exe
+C:\Users\BANCADA\Desktop\desafio_banco_mundialFPDW1\desafioBancoMundialFPDW1\BancoMundial\bin\Debug\net8.0\BancoMundial.deps.json
+C:\Users\BANCADA\Desktop\desafio_banco_mundialFPDW1\desafioBancoMundialFPDW1\BancoMundial\bin\Debug\net8.0\BancoMundial.runtimeconfig.json
+C:\Users\BANCADA\Desktop\desafio_banco_mundialFPDW1\desafioBancoMundialFPDW1\BancoMundial\bin\Debug\net8.0\BancoMundial.dll
+C:\Users\BANCADA\Desktop\desafio_banco_mundialFPDW1\desafioBancoMundialFPDW1\BancoMundial\bin\Debug\net8.0\BancoMundial.pdb
+C:\Users\BANCADA\Desktop\desafio_banco_mundialFPDW1\desafioBancoMundialFPDW1\BancoMundial\obj\Debug\net8.0\BancoMundial.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\BANCADA\Desktop\desafio_banco_mundialFPDW1\desafioBancoMundialFPDW1\BancoMundial\obj\Debug\net8.0\BancoMundial.AssemblyInfoInputs.cache
+C:\Users\BANCADA\Desktop\desafio_banco_mundialFPDW1\desafioBancoMundialFPDW1\BancoMundial\obj\Debug\net8.0\BancoMundial.AssemblyInfo.cs
+C:\Users\BANCADA\Desktop\desafio_banco_mundialFPDW1\desafioBancoMundialFPDW1\BancoMundial\obj\Debug\net8.0\BancoMundial.csproj.CoreCompileInputs.cache
+C:\Users\BANCADA\Desktop\desafio_banco_mundialFPDW1\desafioBancoMundialFPDW1\BancoMundial\obj\Debug\net8.0\BancoMundial.sourcelink.json
+C:\Users\BANCADA\Desktop\desafio_banco_mundialFPDW1\desafioBancoMundialFPDW1\BancoMundial\obj\Debug\net8.0\BancoMundial.dll
+C:\Users\BANCADA\Desktop\desafio_banco_mundialFPDW1\desafioBancoMundialFPDW1\BancoMundial\obj\Debug\net8.0\refint\BancoMundial.dll
+C:\Users\BANCADA\Desktop\desafio_banco_mundialFPDW1\desafioBancoMundialFPDW1\BancoMundial\obj\Debug\net8.0\BancoMundial.pdb
+C:\Users\BANCADA\Desktop\desafio_banco_mundialFPDW1\desafioBancoMundialFPDW1\BancoMundial\obj\Debug\net8.0\BancoMundial.genruntimeconfig.cache
+C:\Users\BANCADA\Desktop\desafio_banco_mundialFPDW1\desafioBancoMundialFPDW1\BancoMundial\obj\Debug\net8.0\ref\BancoMundial.dll

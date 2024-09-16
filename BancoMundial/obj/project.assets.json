@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\BANCADA\\Desktop\\desafio_banco_mundial_FPDW1\\BancoMundial\\BancoMundial.csproj",
+      "projectUniqueName": "C:\\Users\\BANCADA\\Desktop\\desafio_banco_mundialFPDW1\\desafioBancoMundialFPDW1\\BancoMundial\\BancoMundial.csproj",
       "projectName": "BancoMundial",
-      "projectPath": "C:\\Users\\BANCADA\\Desktop\\desafio_banco_mundial_FPDW1\\BancoMundial\\BancoMundial.csproj",
+      "projectPath": "C:\\Users\\BANCADA\\Desktop\\desafio_banco_mundialFPDW1\\desafioBancoMundialFPDW1\\BancoMundial\\BancoMundial.csproj",
       "packagesPath": "C:\\Users\\BANCADA\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\BANCADA\\Desktop\\desafio_banco_mundial_FPDW1\\BancoMundial\\obj\\",
+      "outputPath": "C:\\Users\\BANCADA\\Desktop\\desafio_banco_mundialFPDW1\\desafioBancoMundialFPDW1\\BancoMundial\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\BANCADA\\AppData\\Roaming\\NuGet\\NuGet.Config"
