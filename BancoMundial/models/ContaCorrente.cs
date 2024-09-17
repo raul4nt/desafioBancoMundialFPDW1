@@ -29,6 +29,8 @@ public class ContaCorrente: Conta, IDepositavel{
         }
 
         
+
+        
         Tipo = tipo;
         Limite = limite;
         TaxaDoLimite = taxaDoLimite;
@@ -77,10 +79,18 @@ public class ContaCorrente: Conta, IDepositavel{
 // ContaCorrente: O atributo TipoConta pode ter o valor: SIMPLES ou ESPECIAL. 
 // Contas do tipo especial podem apenas ser abertas para pessoas físicas ou 
 // jurídicas com renda/faturamento superior à R$ 5.000,00. Toda conta corrente
-//  pode ficar com o saldo negativo, mas não pode ultrapassar o limite. O limite
-//   é calculado com base na renda, sendo 150% da renda para contas simples e 
+//  pode ficar com o saldo negativo, mas não pode ultrapassar o limite. 
+
+
+
+//   O limite é calculado com base na renda, sendo 150% da renda para contas simples e 
 //   250% da renda para conta especial. A taxa de juros do limite da conta corrente
 //    é de 5% para contas simples e 2% para contas especiais.
+
+
+
+
+
 
 // A conta corrente permite operações de saque, depósito, transferência, 
 // pagamentos, consulta de saldo e empréstimos. 
