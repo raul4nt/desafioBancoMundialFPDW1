@@ -8,15 +8,41 @@ public class ContaCorrente: Conta, IDepositavel{
 
     public ContaCorrente(Pessoa titular, long numero, int agencia, 
     double saldo, double taxaSaque, TipoConta tipo, double limite, double taxaDoLimite) : base(titular, numero, agencia, saldo, taxaSaque){
+        
+         if (tipo == TipoConta.ESPECIAL)
+        {
+            double rendaOuFaturamento = 0;
+            
+            if (titular is PessoaFisica pf)
+            {
+                rendaOuFaturamento = pf.Renda;
+            }
+            else if (titular is PessoaJuridica pj)
+            {
+                rendaOuFaturamento = pj.Faturamento;
+            }
+
+            if (rendaOuFaturamento <= 5000.00)
+            {
+                throw new ArgumentException("Contas do tipo 'ESPECIAL' só podem ser abertas para pessoas com renda superior a R$ 5.000,00.");
+            }
+        }
+
+        
         Tipo = tipo;
         Limite = limite;
         TaxaDoLimite = taxaDoLimite;
+        
+
     }
 
     public enum TipoConta{
+        
         SIMPLES,
         ESPECIAL,
     }
+
+
 
     public override void Sacar(double valor)
     {
