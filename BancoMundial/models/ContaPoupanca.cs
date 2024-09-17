@@ -1,21 +1,41 @@
-public class ContaPoupanca: Conta{
+public class ContaPoupanca: Conta, IDepositavel{
     
     public ContaPoupanca(Pessoa titular, long numero, int agencia, 
     double saldo, double taxaSaque) : base(titular, numero, agencia, saldo, taxaSaque){
     }
 
-    public override void Sacar(double valor)
-    {
-        throw new NotImplementedException();
+  public override void Sacar(double valor){
+    if (Saldo >= valor){
+      Saldo -= valor;
+      Console.WriteLine("Saque realizado com sucesso!");  
+    }else{ 
+      Console.WriteLine("Saldo insuficiente!");
     }
+  }
+
 
     public override double ConsultarSaldo()
     {
-        throw new NotImplementedException();
+        return Saldo;
     }
 
-    public override void Transferir(Conta conta, double valor)
+    public override void Transferir(Conta contaDestino, double valor)
     {
-        throw new NotImplementedException();
+        if (Saldo >= valor){
+            Saldo -= valor;
+            contaDestino.Saldo += valor;
+        }else{
+            Console.WriteLine("Saldo insuficiente!");
+        }
+
     }
+
+    public void Depositar(double valor){
+        Saldo += valor;
+        Console.WriteLine("Déposito realizado com sucesso!");
+    }
+
 }
+
+// Conta poupança: O saldo desse tipo de conta não pode ficar negativo. Há uma taxa de saque igual 
+// para todas as contas desse tipo. São permitidas operação de saque, depósito, transferência e consulta de saldo
