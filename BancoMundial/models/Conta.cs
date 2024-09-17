@@ -9,7 +9,7 @@ public abstract class Conta{
         Titular = titular; 
         Numero = numero;
         Agencia = agencia;
-        Saldo = saldo;
+        Saldo = 0;
         TaxaSaque = taxaSaque;
     
     }
@@ -20,3 +20,9 @@ public abstract class Conta{
     
 
 }
+
+
+// Toda Conta aberta no banco deve ter um títular, que pode ser tanto uma pessoa 
+// física quanto uma pessoa jurídica. 
+// Além do número da conta e agência e uma taxa de saque. O saldo é definido 
+// como zero, sempre que uma conta for aberta. 
