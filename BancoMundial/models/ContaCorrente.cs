@@ -61,12 +61,13 @@ public class ContaCorrente: Conta, IDepositavel{
 
     public override void Transferir(Conta contaDestino, double valor)
     {
-        //Corrigir
-        if (Saldo >= valor){
+        double saldoDisponivel = Saldo + Limite;
+
+        if (valor <= saldoDisponivel) {
             Saldo -= valor;
             contaDestino.Saldo += valor;
         }else{
-            Console.WriteLine("Saldo insuficiente!");
+            Console.WriteLine("Saldo insuficiente! O valor excede o limite disponível.");
         }
 
     }
