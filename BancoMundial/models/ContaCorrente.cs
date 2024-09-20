@@ -72,14 +72,25 @@ public class ContaCorrente: Conta, IDepositavel{
     Saldo += valor;
     Console.WriteLine("Déposito realizado com sucesso!");
     }
+
+    public void Pagar(string codigoBarras){
+        Console.WriteLine("Código de barras pago!");
+    }
+
+    public void Emprestimo(double valor){
+        Console.WriteLine($"Empréstimo no valor de R${valor} realizado!");
+    }
+
 }
 
 
 
 // ContaCorrente: O atributo TipoConta pode ter o valor: SIMPLES ou ESPECIAL. 
 // Contas do tipo especial podem apenas ser abertas para pessoas físicas ou 
-// jurídicas com renda/faturamento superior à R$ 5.000,00. Toda conta corrente
-//  pode ficar com o saldo negativo, mas não pode ultrapassar o limite. 
+// jurídicas com renda/faturamento superior à R$ 5.000,00. 
+
+
+// Toda conta corrente pode ficar com o saldo negativo, mas não pode ultrapassar o limite. 
 
 
 

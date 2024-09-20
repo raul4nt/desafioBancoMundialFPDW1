@@ -6,14 +6,14 @@ class PessoaJuridica : Pessoa{
     public string NomeFantasia{ get; set; }
     public int InscrEstadual{ get; set; }
     public DateTime DataAbertura{ get; set; }
-    public  readonly int Idade;
+    public readonly int Idade;
     
     public double Faturamento{ get; set; }
     
     public PessoaJuridica(
          int id, string endereco, string tel, string email, List<PessoaFisica> socios, 
          int cnpj, string razaoSocial, string nomeFantasia, int inscrEstadual,
-         DateTime dataAbertura, int idade, double faturamento) : base(id, endereco, tel, email){
+         DateTime dataAbertura) : base(id, endereco, tel, email){
             Socios = socios;
             Cnpj = cnpj;
             RazaoSocial = razaoSocial;

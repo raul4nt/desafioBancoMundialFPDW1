@@ -10,7 +10,7 @@ class PessoaFisica : Pessoa{
     public double Renda{ get; set; }
 
     public PessoaFisica(
-        int id, string endereco, string tel, string email, string nome, string sobrenome, string rg, string cpf, DateTime dataNasc, int idade, string faixaEtaria, double renda) : base(id, endereco, tel, email){
+        int id, string endereco, string tel, string email, string nome, string sobrenome, string rg, string cpf, DateTime dataNasc) : base(id, endereco, tel, email){
             Nome = nome;
             Sobrenome = sobrenome;
             Rg = rg;
