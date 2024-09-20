@@ -7,35 +7,32 @@ public class ContaCorrente: Conta, IDepositavel{
     
 
     public ContaCorrente(Pessoa titular, long numero, int agencia, 
-    double saldo, double taxaSaque, TipoConta tipo, double limite, double taxaDoLimite) : base(titular, numero, agencia, saldo, taxaSaque){
+    double saldo, double taxaSaque, TipoConta tipo) : base(titular, numero, agencia, saldo, taxaSaque){
         
-         if (tipo == TipoConta.ESPECIAL)
-        {
-            double rendaOuFaturamento = 0;
+         double rendaOuFaturamento = 0;
+
+         if (titular is PessoaFisica pf){
+            rendaOuFaturamento = pf.Renda;
+         
+         } else if (titular is PessoaJuridica pj){
+            rendaOuFaturamento = pj.Faturamento;
+         }
+
+         if (tipo == TipoConta.ESPECIAL){
             
-            if (titular is PessoaFisica pf)
-            {
-                rendaOuFaturamento = pf.Renda;
-            }
-            else if (titular is PessoaJuridica pj)
-            {
-                rendaOuFaturamento = pj.Faturamento;
-            }
-
-            if (rendaOuFaturamento <= 5000.00)
-            {
+            if (rendaOuFaturamento <= 5000.00) {
                 throw new ArgumentException("Contas do tipo 'ESPECIAL' só podem ser abertas para pessoas com renda superior a R$ 5.000,00.");
-            }
+         }
+            Limite = rendaOuFaturamento * 2.5;
+            TaxaDoLimite = 0.02;
+            
+        } else{
+            Limite = rendaOuFaturamento * 1.5;
+            TaxaDoLimite = 0.05;
         }
-
-        
-
         
         Tipo = tipo;
-        Limite = limite;
-        TaxaDoLimite = taxaDoLimite;
         
-
     }
 
     public enum TipoConta{
@@ -46,9 +43,15 @@ public class ContaCorrente: Conta, IDepositavel{
 
 
 
-    public override void Sacar(double valor)
-    {
-        throw new NotImplementedException();
+    public override void Sacar(double valor) {
+        double saldoDisponivel = Saldo + Limite;
+
+        if (valor <= saldoDisponivel) {
+            Saldo -= valor;
+            Console.WriteLine("Saque realizado com sucesso!");
+        } else {
+            Console.WriteLine("Saldo insuficiente! O valor excede o limite disponível.");
+        }
     }
 
     public override double ConsultarSaldo()

@@ -13,7 +13,7 @@ class PessoaJuridica : Pessoa{
     public PessoaJuridica(
          int id, string endereco, string tel, string email, List<PessoaFisica> socios, 
          int cnpj, string razaoSocial, string nomeFantasia, int inscrEstadual,
-         DateTime dataAbertura) : base(id, endereco, tel, email){
+         DateTime dataAbertura, double faturamento = 0) : base(id, endereco, tel, email){
             Socios = socios;
             Cnpj = cnpj;
             RazaoSocial = razaoSocial;
@@ -21,7 +21,7 @@ class PessoaJuridica : Pessoa{
             InscrEstadual = inscrEstadual;
             DataAbertura = dataAbertura;
             Idade = Auxiliar.CalcularIdade(DataAbertura); 
-            Faturamento = 0;
+            Faturamento = faturamento;
 
 
          }
